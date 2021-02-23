@@ -118,25 +118,25 @@
 
 //                                                             6     getValueByPath
 
-var obj = {
-  A1: { path: "01" },
-  A2: { path: "02" },
-  A3: { path: [1, 2, 3] },
-};
+// var obj = {
+//   A1: { path: "01" },
+//   A2: { path: "02" },
+//   A3: { path: [1, 2, 3] },
+// };
 
-function getValueByPath(obj, path) {
-  let paths = path.split("."),
-    current = obj,
-    i;
+// function getValueByPath(obj, path) {
+//   let paths = path.split("."),
+//     current = obj,
+//     i;
 
-  for (i = 0; i < paths.length; ++i) {
-    if (current[paths[i]] == undefined) {
-      return undefined;
-    } else {
-      current = current[paths[i]];
-    }
-  }
-  return current;
-}
+//   for (i = 0; i < paths.length; ++i) {
+//     if (current[paths[i]] == undefined) {
+//       return undefined;
+//     } else {
+//       current = current[paths[i]];
+//     }
+//   }
+//   return current;
+// }
 
-console.log(getValueByPath(obj, "A3.path.1"));
+// console.log(getValueByPath(obj, "A3.path.1"));
